@@ -12,13 +12,15 @@ import java.time.Month;
 
 public class AccesoADatos {
 
-
+    //Aca arranca la aplicacion
         
         public static void main(String[] args) throws SQLException  {
         
             Alumno alumno = new Alumno("Lopez Karina", LocalDate.of(1976, Month.JANUARY, 20));
             
             Conexion con = new Conexion();
+            
+            //Creamos AlumnoData
             
             AlumnoData ad = new AlumnoData(con);
             
